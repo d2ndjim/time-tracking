@@ -5,106 +5,106 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700&family=Rubik:wght@500&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Time tracking dashboard</title>
-
-  
 </head>
+
 <body>
   <section class="container">
     <div class="user-section">
-      <img id="user-img" src="./images/image-jeremy.png" alt="user-img">
       <div class="user-txt">
-        <p>Jeremy <br> Robson</p>
+        <img id="user-img" src="./images/image-jeremy.png" alt="user-img">
+        <p>Report for <br> Jeremy Robson </p>
       </div>
-      <div class="time">
-        <ul>
+      <ul class="time">
           <li>Daily</li>
           <li>Weekly</li>
           <li>Monthly</li>
-        </ul>
-      </div>
+      </ul>
     </div>
 
     <div class="work-card">
-      <img class="work-icon" src="images/icon-work.svg" alt="work-icon"> 
+      <div class="icon-img work-img"></div>
       <div class="work-body">
         <div id="work-header">
-          <span>Work</span>
-          <img src="images/icon-ellipsis.svg" alt="menu">
+          <h5>Work</h5>
+          <span><img src="images/icon-ellipsis.svg" alt="menu"></span>
         </div>
         <div class="work-text">
-          <p>32hrs</p>
-          <p>Last Week - 36hrs</p>
+          <p class="hrs">32hrs</p>
+          <p class="last-time">Last Week - 36hrs</p>
         </div>
       </div>
     </div>
 
     <div class="play-card">
-      <img class="play-icon" src="images/icon-play.svg" alt="play-icon"> 
+      <div class="icon-img play-img"></div>
       <div class="play-body">
         <div id="play-header">
-          <span>Play</span>
-          <img src="images/icon-ellipsis.svg" alt="menu">
+          <h5>Play</h5>
+          <span><img src="images/icon-ellipsis.svg" alt="menu"></span>
         </div>
         <div class="play-text">
-          <p>10hrs</p>
-          <p>Last Week - 8hrs</p>
+          <p class="hrs">10hrs</p>
+          <p class="last-time">Last Week - 8hrs</p>
         </div>
       </div>
     </div>
 
     <div class="study-card">
-      <img class="study-icon" src="images/icon-study.svg" alt="study-icon"> 
+      <div class="icon-img study-img"></div>
       <div class="study-body">
         <div id="study-header">
-          <span>Study</span>
-          <img src="images/icon-ellipsis.svg" alt="menu">
+          <h5>Study</h5>
+          <span><img src="images/icon-ellipsis.svg" alt="menu"></span>
         </div>
         <div class="study-text">
-          <p>4hrs</p>
-          <p>Last Week - 7hrs</p>
+          <p class="hrs">4hrs</p>
+          <p class="last-time">Last Week - 7hrs</p>
         </div>
       </div>
     </div>
 
     <div class="exercise-card">
-      <img class="exercise-icon" src="images/icon-exercise.svg" alt="exercise-icon"> 
+      <div class="icon-img exercise-img"></div>
       <div class="exercise-body">
         <div id="exercise-header">
-          <span>Exercise</span>
-          <img src="images/icon-ellipsis.svg" alt="menu">
+          <h5>Exercise</h5>
+          <span><img src="images/icon-ellipsis.svg" alt="menu"></span>
         </div>
         <div class="exercise-text">
-          <p>4hrs</p>
-          <p>Last Week - 5hrs</p>
+          <p class="hrs">4hrs</p>
+          <p class="last-time">Last Week - 5hrs</p>
         </div>
       </div>
     </div>
 
     <div class="social-card">
-      <img class="social-icon" src="images/icon-social.svg" alt="social-icon"> 
+      <div class="icon-img social-img"></div> 
       <div class="social-body">
         <div id="social-header">
-          <span>Social</span>
-          <img src="images/icon-ellipsis.svg" alt="menu">
+          <h5>Social</h5>
+          <span><img src="images/icon-ellipsis.svg" alt="menu"></span>
         </div>
         <div class="social-text">
-          <p>5hrs</p>
-          <p>Last Week - 10hrs</p>
+          <p class="hrs">5hrs</p>
+          <p class="last-time">Last Week - 10hrs</p>
         </div>
       </div>
     </div>
 
     <div class="selfcare-card">
-      <img class="selfcare-icon" src="images/icon-self-care.svg" alt="selfcare-icon"> 
+      <div class="icon-img selfcare-img"></div>
       <div class="selfcare-body">
         <div id="selfcare-header">
-          <span>Self Care</span>
-          <img src="images/icon-ellipsis.svg" alt="menu">
+          <h5>Self Care</h5>
+          <span><img src="images/icon-ellipsis.svg" alt="menu"></span>
         </div>
         <div class="selfcare-text">
-          <p>2hrs</p>
-          <p>Last Week - 2hrs</p>
+          <p class="hrs">2hrs</p>
+          <p class="last-time">Last Week - 2hrs</p>
         </div>
       </div>
     </div>
@@ -117,60 +117,3 @@
 </body>
 </html>
 
-<!--
- Report for
-  Jeremy Robson
-
-  Daily
-  Weekly
-  Monthly
-
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
-
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
-
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
-
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
-
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
-
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
-
-   -->

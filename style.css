@@ -1,3 +1,138 @@
+*, 
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  background-color: hsl(226, 43%, 10%);
+  color: white;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 90%;
+  margin: 70px auto;
+}
+
+#user-img {
+  width: 100px;
+  align-self: flex-start;
+}
+
+.user-section {
+  width: 100%;
+}
+
+.user-txt {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: hsl(246, 80%, 60%);
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.time {
+  background-color: hsl(235, 46%, 20%);
+  list-style: none;
+  display: flex;
+  border: 1px solid black;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+.icon-img {
+  height: 6vh;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  border-radius: 8px; 
+}
+
+.work-img {
+  background-color: hsl(15, 100%, 70%);
+  background-image: url('./images/icon-work.svg');
+}
+
+.play-img {
+  background-color: hsl(195, 74%, 62%);
+  background-image: url('./images/icon-play.svg');
+}
+
+.study-img {
+  background-color: hsl(348, 100%, 68%);
+  background-image: url('./images/icon-study.svg');
+}
+
+.exercise-img {
+  background-color: hsl(145, 58%, 55%);
+  background-image: url('./images/icon-exercise.svg')
+}
+
+.social-img {
+  background-color: hsl(264, 64%, 52%);
+  background-image: url('./images/icon-social.svg')
+}
+
+.selfcare-img {
+  background-color: hsl(43, 84%, 65%);
+  background-image: url('./images/icon-self-care.svg')
+}
+
+.hrs {
+  font-size: 35px;
+}
+
+.last-time {
+  padding: 10px;
+}
+
+.work-body, .play-body,
+.study-body, .exercise-body,
+.selfcare-body, .social-body {
+  background-color: hsl(235, 46%, 20%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 8px;
+}
+
+#work-header, .work-text, 
+#study-header, .study-text, 
+#play-header, .play-text, 
+#exercise-header, .exercise-text,
+#social-header, .social-text,
+#selfcare-header, .selfcare-text {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+
+  
+
+
+
+
+
+
+
+
+
+
 .attribution {
   font-size: 11px;
   text-align: center;
