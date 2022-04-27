@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700&family=Rubik:wght@500&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Time tracking dashboard</title>
+</head>
+
+<body>
+  <section class="container">
+    <div class="user-section">
+      <div class="user-txt">
+        <img id="user-img" src="./images/image-jeremy.png" alt="user-img">
+        <p>Report for <br> Jeremy Robson </p>
+      </div>
+      <ul class="time">
+          <li id="daily">Daily</li>
+          <li id="weekly">Weekly</li>
+          <li id="monthly">Monthly</li>
+      </ul>
+    </div>
+
+    <div class="work-card">
+      <div class="icon-img work-img"></div>
+      <div class="work-body">
+        <div id="work-header">
+          <h5>Work</h5>
+          <span><img src="images/icon-ellipsis.svg" alt="menu"></span>
+        </div>
+        <div class="work-text">
+          <p id="workhrs" class="hrs">32hrs</p>
+          <p id="worklst" class="last-time">Last Week - 36hrs</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="play-card">
+      <div class="icon-img play-img"></div>
+      <div class="play-body">
+        <div id="play-header">
+          <h5>Play</h5>
+          <span><img src="images/icon-ellipsis.svg" alt="menu"></span>
+        </div>
+        <div class="play-text">
+          <p id="playhrs" class="hrs">10hrs</p>
+          <p id="playlst" class="last-time">Last Week - 8hrs</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="study-card">
+      <div class="icon-img study-img"></div>
+      <div class="study-body">
+        <div id="study-header">
+          <h5>Study</h5>
+          <span><img src="images/icon-ellipsis.svg" alt="menu"></span>
+        </div>
+        <div class="study-text">
+          <p id="studyhrs" class="hrs">4hrs</p>
+          <p id="studylst" class="last-time">Last Week - 7hrs</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="exercise-card">
+      <div class="icon-img exercise-img"></div>
+      <div class="exercise-body">
+        <div id="exercise-header">
+          <h5>Exercise</h5>
+          <span><img src="images/icon-ellipsis.svg" alt="menu"></span>
+        </div>
+        <div class="exercise-text">
+          <p id="exercisehrs" class="hrs">4hrs</p>
+          <p id="exerciselst" class="last-time">Last Week - 5hrs</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="social-card">
+      <div class="icon-img social-img"></div> 
+      <div class="social-body">
+        <div id="social-header">
+          <h5>Social</h5>
+          <span><img src="images/icon-ellipsis.svg" alt="menu"></span>
+        </div>
+        <div class="social-text">
+          <p id="socialhrs" class="hrs">5hrs</p>
+          <p id="sociallst" class="last-time">Last Week - 10hrs</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="selfcare-card">
+      <div class="icon-img selfcare-img"></div>
+      <div class="selfcare-body">
+        <div id="selfcare-header">
+          <h5>Self Care</h5>
+          <span><img src="images/icon-ellipsis.svg" alt="menu"></span>
+        </div>
+        <div class="selfcare-text">
+          <p id="selfhrs" class="hrs">2hrs</p>
+          <p id="selflst" class="last-time">Last Week - 2hrs</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/d2ndjim">Lekan Jimoh</a>.
+  </div>
+
+  <script src="index.js" defer></script>
+</body>
+</html>
+
