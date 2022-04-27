@@ -26,6 +26,24 @@ body {
   align-self: flex-start;
 }
 
+#weekly, #monthly, #daily {
+  cursor: pointer;
+  color: hsl(235, 45%, 61%);
+  
+}
+
+#weekly:hover,
+#monthly:hover,
+#daily:hover {
+  color: hsl(236, 100%, 87%);
+}
+
+#weekly.active, #monthly.active,
+#daily.active {
+  color: white;
+}
+
+
 .user-section {
   width: 100%;
 }
@@ -91,7 +109,7 @@ body {
 }
 
 .hrs {
-  font-size: 35px;
+  font-size: 30px;
 }
 
 .last-time {
@@ -110,6 +128,15 @@ body {
   border-radius: 8px;
 }
 
+.work-body:hover,
+.play-body:hover,
+.study-body:hover,
+.exercise-body:hover,
+.selfcare-body:hover,
+.social-body:hover {
+  background-color: hsl(235, 45%, 61%);
+}
+
 #work-header, .work-text, 
 #study-header, .study-text, 
 #play-header, .play-text, 
@@ -119,19 +146,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 15px;
-}
-
-
-  
-
-
-
-
-
-
-
-
-
+}  
 
 .attribution {
   font-size: 11px;
@@ -140,4 +155,8 @@ body {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 768px) {
+  
 }
