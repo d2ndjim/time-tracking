@@ -13,7 +13,6 @@ body {
 }
 
 .container {
-  position: relative;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -157,6 +156,43 @@ body {
   color: hsl(228, 45%, 44%);
 }
 
-@media only screen and (min-width: 768px) {
-  
+@media screen and (min-width: 900px) {
+  .container {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+    width: 90%;
+
+  }
+
+  .user-section {
+    grid-row: 1 / span 2;
+  }
+
+  .user-txt {
+    display: flex;
+    flex-direction: column;
+    height: 290px;
+    align-items: flex-start;
+  }
+
+  .user-txt p {
+    font-size: 35px;
+  }
+
+  .time {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .last-time {
+    font-size: 10px;
+  }
+
+  .work-text, .play-text, .study-text,
+  .exercise-text, .social-text, .selfcare-text {
+    display: flex;
+    flex-direction: column;
+  }
 }
